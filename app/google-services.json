@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "232283705602",
+    "firebase_url": "https://camera-and-cloud-63f35.firebaseio.com",
+    "project_id": "camera-and-cloud-63f35",
+    "storage_bucket": "camera-and-cloud-63f35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232283705602:android:16b197bfb1e09ed2",
+        "android_client_info": {
+          "package_name": "com.petergeras.cameraandcloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232283705602-27fkm8hppp72jvkefasltco679arc4vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPNN1Rya0eN0N0O_1XVA-MaPCLQMLbGDU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

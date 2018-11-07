@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".inApp.PhotoFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/comments_box"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorWhite" />
+
+
+    <RelativeLayout
+        android:id="@+id/comments_box"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorWhite">
+
+        <EditText
+            android:id="@+id/comments_ET"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="52dp"
+            android:background="@drawable/photo_comments"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Comment here..."
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:paddingTop="5dp" />
+
+        <ImageView
+            android:id="@+id/sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14dp"
+            android:src="@mipmap/ic_send_button" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

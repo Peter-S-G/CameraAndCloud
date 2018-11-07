@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_photo_camera_black_24dp" />
+
+    <ImageView
+        android:id="@+id/like_inactive"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/date"
+        android:layout_marginStart="25dp"
+        android:clickable="true"
+        android:src="@mipmap/ic_favorite_inactive" />
+
+    <TextView
+        android:id="@+id/likes_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/like_inactive"
+        android:layout_toEndOf="@+id/like_inactive"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="0 Likes"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/publishedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo"
+        android:layout_centerHorizontal="true"
+        android:text="Published By: " />
+
+    <ImageView
+        android:id="@+id/commentIcon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/like_inactive"
+        android:layout_toEndOf="@+id/date"
+        android:layout_marginLeft="-30dp"
+        android:src="@mipmap/ic_comment" />
+
+    <TextView
+        android:id="@+id/comments_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/like_inactive"
+        android:layout_toEndOf="@+id/commentIcon"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="0 Comments"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/publishedBy"
+        android:layout_centerHorizontal="true"
+        android:text="Date: " />
+
+
+</RelativeLayout>
